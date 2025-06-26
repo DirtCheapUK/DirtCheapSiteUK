@@ -13,13 +13,45 @@
       color: #333;
     }
 
+    /* Top bar with phone and accreditations */
+    .top-bar {
+      background-color: #4caf50; /* lighter green */
+      color: white;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.3rem 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-weight: 600;
+    }
+    .top-bar .phone {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .top-bar .phone svg {
+      width: 16px;
+      height: 16px;
+      fill: white;
+    }
+    .top-bar .accreditations {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .top-bar .accreditations img {
+      height: 24px;
+      display: block;
+    }
+
     header {
-      background-color: #2f4f2f; /* Dark olive green */
+      background-color: #66bb6a; /* lighter green */
       color: white;
       padding: 1rem 1.5rem;
       text-align: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      border-bottom: 3px solid #244124; /* Slightly darker for border */
+      border-bottom: 3px solid #4caf50;
     }
 
     .header-title {
@@ -66,9 +98,35 @@
       display: block;
       margin-top: 14px;
     }
+
+    /* Responsive fix for top bar on small screens */
+    @media (max-width: 480px) {
+      .top-bar {
+        flex-direction: column;
+        gap: 0.4rem;
+        font-size: 0.85rem;
+      }
+      .top-bar .accreditations {
+        gap: 0.6rem;
+      }
+    }
   </style>
 </head>
 <body>
+  <div class="top-bar">
+    <div class="phone">
+      <!-- Phone icon SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.745 20.75 3.25 13.255 3.25 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>
+      <span>Call us now: <a href="tel:07774761582" style="color: white; text-decoration: underline;">07774 761582</a></span>
+    </div>
+    <div class="accreditations" aria-label="Accreditations and certifications">
+      <!-- Example accreditation images, replace src with your real images -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Trustpilot_logo.svg/120px-Trustpilot_logo.svg.png" alt="Trustpilot" title="Trustpilot Rating" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Check_mark_green.svg/120px-Check_mark_green.svg.png" alt="Approved Service" title="Approved Service" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/ISO_9001_Logo.svg/120px-ISO_9001_Logo.svg.png" alt="ISO 9001 Certified" title="ISO 9001 Certified" />
+    </div>
+  </div>
+
   <header>
     <h1 class="header-title">Dirt Cheap! Carpet Cleaning</h1>
     <p class="header-tagline">Affordable and professional carpet cleaning in Cheshunt</p>
@@ -119,7 +177,7 @@
         <p><textarea name="message" placeholder="Your Message" rows="4" required></textarea></p>
         <p><button type="submit">Send Message</button></p>
       </form>
-      <p>Call us at <a href="tel:+441234567890">01234 567 890</a> or email <a href="mailto:info@dirtcheap.co.uk">info@dirtcheap.co.uk</a></p>
+      <p>Call us at <a href="tel:07774761582">07774 761582</a> or email <a href="mailto:info@dirtcheap.co.uk">info@dirtcheap.co.uk</a></p>
     </section>
   </main>
 
