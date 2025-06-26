@@ -22,19 +22,29 @@
       border-bottom: 3px solid #244124; /* Slightly darker for border */
     }
 
-    .header-tagline {
-      font-size: 1.2rem;
-      font-weight: 500;
-      margin-bottom: 0.4rem;
-      font-style: italic;
+    .header-title {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
       letter-spacing: 0.05em;
     }
 
-    .logo {
-      max-width: 180px;
-      margin: 0 auto 1rem auto;
+    .header-tagline {
+      margin-top: 0.25rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      font-style: normal;
+      opacity: 0.9;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
       display: block;
+      margin: 1rem auto;
       filter: drop-shadow(0 2px 2px rgba(0,0,0,0.15));
+      max-height: 300px;
+      object-fit: contain;
     }
 
     .whatsapp-float {
@@ -60,14 +70,15 @@
 </head>
 <body>
   <header>
-    <div class="header-tagline">Fast, Friendly & Affordable Carpet Cleaning in Cheshunt</div>
-    <img class="logo" src="fallout-logo.jpeg.PNG" alt="Dirt Cheap Logo" />
+    <h1 class="header-title">Dirt Cheap! Carpet Cleaning</h1>
+    <p class="header-tagline">Affordable and professional carpet cleaning in Cheshunt</p>
   </header>
 
   <main>
     <section class="hero-image">
-      <img src="https://cdn.pixabay.com/photo/2016/11/29/10/07/carpet-1868060_1280.jpg" alt="Clean Carpet Hero" />
+      <img src="fallout-logo.jpeg.PNG" alt="Dirt Cheap Logo" />
     </section>
+
     <section class="pricing">
       <h2>Our Prices</h2>
       <ul>
@@ -79,6 +90,7 @@
         <li>Stain Removal – from £15</li>
       </ul>
     </section>
+
     <section class="before-after">
       <h2>Before & After</h2>
       <p>See the stunning transformations from dirty to spotless carpets in one shot!</p>
@@ -91,10 +103,12 @@
         </div>
       </div>
     </section>
+
     <section class="about">
       <h2>Why Choose Us?</h2>
       <p>We’re fast, affordable, and reliable. Our customers love how fresh their carpets feel after a visit from Dirt Cheap!</p>
     </section>
+
     <section class="contact">
       <h2>Contact Us</h2>
       <form name="contact" method="POST" data-netlify="true">
