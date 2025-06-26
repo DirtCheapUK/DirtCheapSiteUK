@@ -1,238 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dirt Cheap! Carpet Cleaning in Cheshunt</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-    }
+/* styles.css - Dirt Cheap! Carpet Cleaning */
 
-    /* Top bar with phone and accreditations */
-    .top-bar {
-      background-color: #4caf50; /* lighter green */
-      color: white;
-      font-size: 0.9rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.3rem 1.5rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      font-weight: 600;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-    .top-bar .phone {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .top-bar .phone svg {
-      width: 16px;
-      height: 16px;
-      fill: white;
-    }
-    .top-bar .accreditations {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-    .top-bar .accreditations img {
-      height: 24px;
-      display: block;
-      border-radius: 4px;
-      background: white;
-      padding: 2px;
-      box-shadow: 0 0 4px rgba(0,0,0,0.1);
-    }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0 1rem;
+}
 
-    header {
-      background-color: #66bb6a; /* lighter green */
-      color: white;
-      padding: 1rem 1.5rem;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      border-bottom: 3px solid #4caf50;
-    }
+header {
+  background: #27ae60;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
 
-    .header-title {
-      margin: 0;
-      font-size: 2rem;
-      font-weight: bold;
-      letter-spacing: 0.05em;
-    }
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
 
-    .header-tagline {
-      margin-top: 0.25rem;
-      font-size: 1.2rem;
-      font-weight: 400;
-      font-style: normal;
-      opacity: 0.9;
-    }
+h2 {
+  color: #2ecc71;
+  margin-top: 2rem;
+}
 
-    header p.service-areas {
-      font-weight: 600;
-      color: #e0f2f1;
-      margin-top: 0.3rem;
-    }
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
 
-    .hero-image img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 1rem auto;
-      filter: drop-shadow(0 2px 2px rgba(0,0,0,0.15));
-      max-height: 300px;
-      object-fit: contain;
-    }
+.hero-image img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
 
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
-      text-align: center;
-      font-size: 30px;
-      z-index: 100;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-      text-decoration: none;
-    }
-    .whatsapp-float i {
-      display: block;
-      margin-top: 14px;
-    }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 
-    section.about p {
-      font-weight: 600;
-      color: #2f4f2f;
-      margin-top: 0.5rem;
-    }
+.pricing li {
+  background: #eaffea;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+}
 
-    section.pricing h3 {
-      color: #4caf50;
-      margin-bottom: 0.3rem;
-      margin-top: 1rem;
-      font-weight: 700;
-      border-bottom: 2px solid #4caf50;
-      padding-bottom: 0.2rem;
-    }
+.before-after img {
+  border-radius: 8px;
+}
 
-    /* Responsive fix for top bar on small screens */
-    @media (max-width: 480px) {
-      .top-bar {
-        flex-direction: column;
-        gap: 0.4rem;
-        font-size: 0.85rem;
-      }
-      .top-bar .accreditations {
-        gap: 0.6rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="top-bar">
-    <div class="phone">
-      <!-- Phone icon SVG -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.745 20.75 3.25 13.255 3.25 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>
-      <span>Call us now: <a href="tel:07774761582" style="color: white; text-decoration: underline;">07774 761582</a></span>
-    </div>
-    <div class="accreditations" aria-label="Accreditations and certifications">
-      <!-- Real accreditation logos -->
-      <img src="https://seeklogo.com/images/T/trustpilot-logo-0DC48AA2E7-seeklogo.com.png" alt="Trustpilot" title="Trustpilot Rating" />
-      <img src="https://upload.wikimedia.org/wikipedia/en/8/8d/Which-Trusted-Trader-logo.svg" alt="Which Trusted Trader" title="Which Trusted Trader" style="height:24px;" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/ISO_9001_Logo.svg/120px-ISO_9001_Logo.svg.png" alt="ISO 9001 Certified" title="ISO 9001 Certified" />
-      <img src="https://safecontractor.com/assets/img/logo.svg" alt="SafeContractor" title="SafeContractor Accreditation" style="height:24px;" />
-    </div>
-  </div>
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
 
-  <header>
-    <h1 class="header-title">Dirt Cheap! Carpet Cleaning</h1>
-    <p class="header-tagline">Affordable and professional carpet cleaning in Cheshunt</p>
-    <p class="service-areas">
-      We serve: Cheshunt, Waltham Abbey, Broxbourne, Turnford, Waltham Cross
-    </p>
-  </header>
+form button {
+  background-color: #27ae60;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  <main>
-    <section class="hero-image">
-      <img src="fallout-logo.jpeg.PNG" alt="Dirt Cheap Logo" />
-    </section>
+form button:hover {
+  background-color: #219150;
+}
 
-    <section class="pricing">
-      <h2>Our Prices</h2>
+a {
+  color: #27ae60;
+  text-decoration: none;
+}
 
-      <h3>Carpet Cleaning</h3>
-      <ul>
-        <li>1 Room – £25</li>
-        <li>2 Rooms – £45</li>
-        <li>2-bed House – £99</li>
-        <li>3-bed House – £129</li>
-        <li>Stairs + Landing – £35</li>
-        <li>Stain Removal – from £15</li>
-      </ul>
+a:hover {
+  text-decoration: underline;
+}
 
-      <h3>Window Cleaning</h3>
-      <ul>
-        <li>Fronts – £10</li>
-        <li>Back and Front – £20</li>
-        <li>Back, Front & Insides – £40</li>
-      </ul>
-
-      <h3>Additional Treatments</h3>
-      <ul>
-        <li>Insecticide Treatment for Carpets & Furniture – £20 per room</li>
-      </ul>
-    </section>
-
-    <section class="before-after">
-      <h2>Before & After</h2>
-      <p>See the stunning transformations from dirty to spotless carpets in one shot!</p>
-      <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-        <div>
-          <img src="https://www.peachesncleancarpetcleaning.com/img_content/carpet-cleaning-before-after-3.jpg" alt="Before and After Carpet Cleaning 1" width="500" />
-        </div>
-        <div>
-          <img src="https://csbcleaning.co.uk/wp-content/uploads/2019/02/carpet-cleaning-Penarth.jpg" alt="Before and After Carpet Cleaning 2" width="500" />
-        </div>
-      </div>
-    </section>
-
-    <section class="about">
-      <h2>Why Choose Us?</h2>
-      <p>We’re fast, affordable, and reliable. Our customers love how fresh their carpets feel after a visit from Dirt Cheap!</p>
-      <p>We also offer professional <strong>Insecticide Treatment</strong> to keep your home safe and pest-free.</p>
-      <p><em>Contact us today via WhatsApp for a fast response!</em></p>
-    </section>
-
-    <section class="contact">
-      <h2>Contact Us</h2>
-      <p style="font-weight: 600; font-size: 1.1rem;">
-        Please <a href="https://wa.me/447774761582" target="_blank" style="color: #25d366; text-decoration: underline;">WhatsApp us now</a> for quotes, questions, or bookings.<br />
-        We do not use email – WhatsApp is the quickest way to reach us.
-      </p>
-      <form name="contact" method="POST" data-netlify="true" style="display:none;">
-        <input type="hidden" name="form-name" value="contact" />
-        <!-- Hidden since contact is via WhatsApp -->
-      </form>
-    </section>
-  </main>
-
-  <a class="whatsapp-float" href="https://wa.me/447774761582" target="_blank" title="Message us on WhatsApp" aria-label="WhatsApp Message Button">
-    <i>💬</i>
-  </a>
-
-  <footer>
-    <p>© 2025 Dirt Cheap! Carpet Cleaning - Cheshunt</p>
-  </footer>
-</body>
-</html>
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 2rem;
+}
