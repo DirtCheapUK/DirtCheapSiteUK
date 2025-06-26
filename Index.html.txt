@@ -1,0 +1,47 @@
+Index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dirt Cheap! Carpet Cleaning - Cheshunt</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Dirt Cheap! <span>Carpet Cleaning</span></h1>
+    <p class="tagline">Making your carpets look so clean, you'll swear you got a new floor!</p>
+  </header>
+
+  <section class="pricing">
+    <h2>Our Dirt Cheap Prices</h2>
+    <ul>
+      <li>£25 per room — quick and spotless</li>
+      <li>£110 for a whole 2 bed house — dirt doesn’t stand a chance!</li>
+    </ul>
+    <p><strong>Serving Cheshunt & nearby areas</strong></p>
+  </section>
+
+  <section class="gallery">
+    <h2>Before & After</h2>
+    <div class="images">
+      <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=400&q=80" alt="Dirty carpet" />
+      <img src="https://images.unsplash.com/photo-1560185127-1a2df4c0e46f?auto=format&fit=crop&w=400&q=80" alt="Clean carpet" />
+      <img src="https://images.unsplash.com/photo-1616627985162-caa8b0a18e8f?auto=format&fit=crop&w=400&q=80" alt="Carpet cleaning machine" />
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Book Your Dirt Cheap Cleaning Today!</h2>
+    <p>Call or WhatsApp us now: <a href="tel:+441234567890">01234 567 890</a></p>
+    <p>Or email: <a href="mailto:info@dirtcheapcheshunt.co.uk">info@dirtcheapcheshunt.co.uk</a></p>
+    <p><em>We clean dirt cheap, so you don't have to!</em></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Dirt Cheap! Carpet Cleaning — Proudly cleaning Cheshunt one carpet at a time.</p>
+  </footer>
+</body>
+</html>

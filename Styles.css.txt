@@ -1,0 +1,120 @@
+Styles.css
+
+/* Fonts: Fredoka One for logo, Montserrat for text */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #3a86ff;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header h1 span {
+  color: #ff006e;
+}
+
+.tagline {
+  font-style: italic;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.pricing {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #ffbe0b;
+  color: #222;
+}
+
+.pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pricing ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 1rem;
+  max-width: 300px;
+}
+
+.pricing li {
+  font-weight: bold;
+  margin: 0.8rem 0;
+  font-size: 1.2rem;
+}
+
+.gallery {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.images img {
+  max-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+.contact {
+  background: #8338ec;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.contact a {
+  color: #ffbe0b;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact em {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
