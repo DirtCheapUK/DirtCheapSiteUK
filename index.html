@@ -13,13 +13,13 @@
       color: #333;
     }
 
-    /* Top bar with phone and accreditations */
+    /* Top bar with phone only */
     .top-bar {
       background-color: #4caf50; /* lighter green */
       color: white;
       font-size: 0.9rem;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       padding: 0.3rem 1.5rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -36,19 +36,6 @@
       width: 16px;
       height: 16px;
       fill: white;
-    }
-    .top-bar .accreditations {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-    .top-bar .accreditations img {
-      height: 24px;
-      display: block;
-      border-radius: 4px;
-      background: white;
-      padding: 2px;
-      box-shadow: 0 0 4px rgba(0,0,0,0.1);
     }
 
     header {
@@ -133,9 +120,6 @@
         gap: 0.4rem;
         font-size: 0.85rem;
       }
-      .top-bar .accreditations {
-        gap: 0.6rem;
-      }
     }
   </style>
 </head>
@@ -145,32 +129,6 @@
       <!-- Phone icon SVG -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="white"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.745 20.75 3.25 13.255 3.25 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>
       <span>Call us now: <a href="tel:07774761582" style="color: white; text-decoration: underline;">07774 761582</a></span>
-    </div>
-    <div class="accreditations" aria-label="Accreditations and certifications">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Trustpilot_logo.svg/1200px-Trustpilot_logo.svg.png"
-        alt="Trustpilot"
-        title="Trustpilot"
-        style="height:24px; width:auto;"
-      />
-      <img
-        src="https://whichtrustedtraders.direct/images/logos/wtt-logo.png"
-        alt="Which Trusted Trader"
-        title="Which Trusted Trader"
-        style="height:24px; width:auto;"
-      />
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/1/1f/ISO_9001_logo.svg"
-        alt="ISO 9001 Certified"
-        title="ISO 9001 Certified"
-        style="height:24px; width:auto;"
-      />
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Warning_icon.svg/1024px-Warning_icon.svg.png"
-        alt="SafeContractor"
-        title="SafeContractor Accreditation"
-        style="height:24px; width:auto;"
-      />
     </div>
   </div>
 
