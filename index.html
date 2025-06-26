@@ -24,6 +24,8 @@
       padding: 0.3rem 1.5rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       font-weight: 600;
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }
     .top-bar .phone {
       display: flex;
@@ -43,6 +45,10 @@
     .top-bar .accreditations img {
       height: 24px;
       display: block;
+      border-radius: 4px;
+      background: white;
+      padding: 2px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
     }
 
     header {
@@ -99,6 +105,12 @@
       margin-top: 14px;
     }
 
+    section.about p {
+      font-weight: 600;
+      color: #2f4f2f;
+      margin-top: 0.5rem;
+    }
+
     /* Responsive fix for top bar on small screens */
     @media (max-width: 480px) {
       .top-bar {
@@ -120,10 +132,11 @@
       <span>Call us now: <a href="tel:07774761582" style="color: white; text-decoration: underline;">07774 761582</a></span>
     </div>
     <div class="accreditations" aria-label="Accreditations and certifications">
-      <!-- Example accreditation images, replace src with your real images -->
+      <!-- Fake accreditation images -->
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Trustpilot_logo.svg/120px-Trustpilot_logo.svg.png" alt="Trustpilot" title="Trustpilot Rating" />
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Check_mark_green.svg/120px-Check_mark_green.svg.png" alt="Approved Service" title="Approved Service" />
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/ISO_9001_Logo.svg/120px-ISO_9001_Logo.svg.png" alt="ISO 9001 Certified" title="ISO 9001 Certified" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Fire_safe_icon.svg/120px-Fire_safe_icon.svg.png" alt="Safety Approved" title="Safety Approved" />
     </div>
   </div>
 
@@ -165,23 +178,24 @@
     <section class="about">
       <h2>Why Choose Us?</h2>
       <p>We’re fast, affordable, and reliable. Our customers love how fresh their carpets feel after a visit from Dirt Cheap!</p>
+      <p>We also offer professional <strong>Insecticide Treatment</strong> to keep your home safe and pest-free.</p>
+      <p><em>Contact us today via WhatsApp for a fast response!</em></p>
     </section>
 
     <section class="contact">
       <h2>Contact Us</h2>
-      <form name="contact" method="POST" data-netlify="true">
+      <p style="font-weight: 600; font-size: 1.1rem;">
+        Please <a href="https://wa.me/447774761582" target="_blank" style="color: #25d366; text-decoration: underline;">WhatsApp us now</a> for quotes, questions, or bookings.<br />
+        We do not use email – WhatsApp is the quickest way to reach us.
+      </p>
+      <form name="contact" method="POST" data-netlify="true" style="display:none;">
         <input type="hidden" name="form-name" value="contact" />
-        <p><input type="text" name="name" placeholder="Your Name" required></p>
-        <p><input type="email" name="email" placeholder="Your Email" required></p>
-        <p><input type="text" name="phone" placeholder="Your Phone Number" required></p>
-        <p><textarea name="message" placeholder="Your Message" rows="4" required></textarea></p>
-        <p><button type="submit">Send Message</button></p>
+        <!-- Hidden since contact is via WhatsApp -->
       </form>
-      <p>Call us at <a href="tel:07774761582">07774 761582</a> or email <a href="mailto:info@dirtcheap.co.uk">info@dirtcheap.co.uk</a></p>
     </section>
   </main>
 
-  <a class="whatsapp-float" href="https://wa.me/447123456789" target="_blank" title="Message us on WhatsApp">
+  <a class="whatsapp-float" href="https://wa.me/447774761582" target="_blank" title="Message us on WhatsApp" aria-label="WhatsApp Message Button">
     <i>💬</i>
   </a>
 
